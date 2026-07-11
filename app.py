@@ -83,5 +83,4 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     submit_btn.click(fn=heal_heart_process, inputs=[audio_input], outputs=[text_output, audio_output])
 
 if __name__ == "__main__":
-    # Render එකට අවශ්‍ය පරිදි Port එක සහ Host එක සකස් කිරීම
-    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+    demo.launch(server_name="0.0.0.0", server_port=7860)
