@@ -66,7 +66,7 @@ def heal_heart_process(audio_path):
 
     return ai_response_text, output_audio
 
-with gr.Blocks(theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="NESHU AI") as demo:
     gr.Markdown("# ❤️ Healing Hearts AI - ජීවිතය දිනවන හඬ")
     gr.Markdown("### *ආදරයෙන් පැරදී, හිත රිදුණු, හුදෙකලා වූ ඔබ වෙනුවෙන් සම්පූර්ණයෙන්ම නොමිලේ පවත්වාගෙන يනු ලබන උපදේශන සේවාවකි.*")
     gr.Markdown("---")
@@ -83,4 +83,4 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     submit_btn.click(fn=heal_heart_process, inputs=[audio_input], outputs=[text_output, audio_output])
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860, title="NESHU AI")
+    demo.launch(server_name="0.0.0.0", server_port=7860)
